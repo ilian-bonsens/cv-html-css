@@ -1,0 +1,93 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+}
+
+section div {
+    display: inline-block;
+    width: 24%; /* 100% divisé par le nb d'éléments de la liste*/
+    text-align: center;
+  }  
+
+h1 {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+}
+
+nav {
+    margin: auto;
+    width: 100%;
+    position: sticky;
+    font-weight: bold;
+/* garde toute les éléments de la liste bien centrés sur la page, en utilisant 90% de la largeur de la page*/
+}
+
+nav ul {
+    list-style-type: none;
+/* va nous permettre d'enlever les puces de notre liste pour que ça ne se retrouve pas dans le menu*/
+}
+
+nav li {
+    float: left;
+    width: 20%; /* 100% divisé par le nb d'éléments de la liste*/
+    text-align: center;
+/* met les lignes de la liste sur la même ligne en partant de la gauche et les alignes bien centrés sur toute la page*/
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0px;
+/* chaque élément à une zone cliquable et plus seulement le texte, rend le menu plus pratique */
+}
+
+nav a:hover{
+/* l'attribut hover entre en jeu lorsque l'on passe la souris sur l'élément pendant la navigation*/
+    color: rgb(183, 75, 12);
+    border-bottom: 2px solid rgb(183, 75, 12);
+}
+
+.alignement {
+    margin-left: 27px;
+}
+
+.conteneur {
+    width: 0px 20px;
+    height: 50px;
+}
+
+.bouton-lien {
+    display: block;
+    background-color: #719fee;
+    border-radius: 10px;
+    border: 4px double black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: inline-block;
+    width: 47%;
+}
+
+.bouton-lien:hover{
+    background-color: #ffffff;
+    border: 2px solid #1f69ec;
+    box-shadow: 10px 5px 5px #719fee;
+    color: #1f69ec;
+    text-align: center;
+    font-size: 22px;
+}
